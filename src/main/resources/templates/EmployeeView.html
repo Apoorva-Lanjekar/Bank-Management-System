@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Add necessary CSS and JS dependencies -->
+</head>
+<body>
+    <h1>Employee List</h1>
+    <table>
+        <tr th:each="employee : ${employees}">
+            <td th:text="${employee.name}"></td>
+            <td th:text="${employee.email}"></td>
+            <!-- Add edit and delete buttons -->
+        </tr>
+    </table>
+</body>
+</html>
